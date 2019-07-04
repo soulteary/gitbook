@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - cheerio > lodash:
+        patched: '2019-07-04T02:46:32.973Z'
+    - gitbook-asciidoc > lodash:
+        patched: '2019-07-04T02:46:32.973Z'
+    - gitbook-markdown > lodash:
+        patched: '2019-07-04T02:46:32.973Z'
+    - i18n-t > lodash:
+        patched: '2019-07-04T02:46:32.973Z'
+    - juice > cheerio > lodash:
+        patched: '2019-07-04T02:46:32.973Z'
+    - gitbook-asciidoc > gitbook-html > lodash:
+        patched: '2019-07-04T02:46:32.973Z'
+    - gitbook-markdown > gitbook-html > lodash:
+        patched: '2019-07-04T02:46:32.973Z'
+    - request > form-data > async > lodash:
+        patched: '2019-07-04T02:46:32.973Z'
+    - npm > request > form-data > async > lodash:
+        patched: '2019-07-04T02:46:32.973Z'

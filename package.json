@@ -59,7 +59,8 @@
     "spawn-cmd": "0.0.2",
     "tiny-lr": "0.2.1",
     "tmp": "0.0.28",
-    "urijs": "1.18.0"
+    "urijs": "1.18.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "eslint": "2.10.2",
@@ -68,7 +69,9 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "./node_modules/.bin/mocha ./testing/setup.js \"./lib/**/*/__tests__/*.js\" --bail --reporter=list --timeout=10000"
+    "test": "./node_modules/.bin/mocha ./testing/setup.js \"./lib/**/*/__tests__/*.js\" --bail --reporter=list --timeout=10000",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -96,5 +99,6 @@
       "name": "Samy Pessé",
       "email": "samy@gitbook.com"
     }
-  ]
+  ],
+  "snyk": true
 }
