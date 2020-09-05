@@ -51,7 +51,7 @@
     "open": "0.0.5",
     "q": "1.4.1",
     "read-installed": "^4.0.3",
-    "request": "2.72.0",
+    "request": "2.76.0",
     "resolve": "1.1.7",
     "rmdir": "1.2.0",
     "semver": "5.1.0",
